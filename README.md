@@ -32,10 +32,12 @@ This is mainly for myself but it may bring some usefulness to others that want t
 
 - typescript (of course)
 - webpack
+- express
 - prettier
 - eslint
 - jest
 - dead simple travis config
+- example `sharedModule.ts` with its corresponding `.test.ts` file
 - live coding setup
 
 ## What is not included
@@ -64,3 +66,13 @@ This is mainly for myself but it may bring some usefulness to others that want t
     - `webpack-cli` generates and copies the build file to `lib/public` every time you make changes that affect the frontend.
     - `tsc` will rebuild any ts files and make changes to `lib/`, which will cause `nodemon` to restart the server
     - `copy-and-watch` will watch for changes to `src/public/*` and copy them over to `lib/public/` as needed. This will also trigger `nodemon` to restart the server.
+
+## Where is everything (aka. how to get started)
+
+- `src/public/` is your public root folder
+- `src/server.ts` is the node server file
+- `src/client.ts` is the entry point for webpack
+
+## Parting words
+
+Hope you find this to be a great time saver. Please open an issue if there's anything that is missing and essential to development.
