@@ -59,7 +59,7 @@ This is mainly for myself but it may bring some usefulness to others that want t
 - `build-prod`
   - same thing as `build` but with production settings. Runs `test` before building
 - `test`
-  - combination of `build`, `jesttest`, `lint`, and `prettier --check`
+  - a combination of `prettier --check`, `build`, `jesttest`, and `lint` commands
 - `dev-server`
   - starts a live `webpack-cli`, `tsc`, `nodemon`, and `copy-and-watch` session using `concurrently`. Any changes you make to `.ts` files will update and restart the server. Making file changes in `src/public/*` will simply copy that file over. (NOTE: for unknown reasons, if you create/delete a ts file, tsc will sometimes scream at a non-existent error. Just rerun `dev-server` if that happens)
   - More on how this works:

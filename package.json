@@ -10,7 +10,7 @@
         "jesttest": "jest --config jestconfig.json --runInBand",
         "build": "rm -rf lib/* && tsc && webpack-cli && npm run copy-files",
         "build-prod": "npm test && rm -rf lib/* && tsc --project tsconfig.prod.json && webpack-cli --mode='production' && npm run copy-files",
-        "test": "npm run build && npm run jesttest && npm run lint && prettier --check 'src/**/*.ts' && echo 'All tests pass!'",
+        "test": "prettier --check 'src/**/*.ts' && npm run build && npm run jesttest && npm run lint && echo 'All tests pass!'",
         "dev-server": "concurrently 'webpack-cli --watch' 'tsc --watch' 'nodemon --watch lib lib/server.js' 'copy-and-watch --watch src/public/* lib/public/'"
     },
     "keywords": [],
