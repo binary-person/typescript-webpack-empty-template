@@ -30,7 +30,6 @@
                     "object": false
                 }
             }
-        ],
-        "tsdoc/syntax": "off"
+        ]
     }
 }
